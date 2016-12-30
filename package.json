@@ -6,7 +6,7 @@
     "start": "node bin/development.js",
     "production": "node bin/production.js",
     "build": "npm run clean && webpack --config webpack.build.js",
-    "clean": "rm -rf public/build/ && rm -rf dist/",
+    "clean": "rimraf public/build/ && rimraf   dist/",
     "test": "mocha -u bdd --compilers js:babel-core/register",
     "dev": "npm start"
   },
@@ -73,6 +73,7 @@
     "mocha": "^3.1.2",
     "null-loader": "^0.1.1",
     "postcss-loader": "^0.9.1",
+    "rimraf": "^2.5.4",
     "rucksack-css": "^0.8.6",
     "should": "^11.1.1",
     "style-loader": "^0.13.1",
